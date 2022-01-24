@@ -1,0 +1,100 @@
+@use "variables";
+
+
+.header {
+  @include width;
+  height: 134px;
+  text-align: center;
+  @include align_center;
+  top:0;
+  color: $beige;
+  z-index: $gnb_z_index;
+
+  h1 {
+    @include align_center;
+    top: 34px;
+    display: inline-block;
+    width: 174px;
+    height: auto;
+    img {
+      width: 100%;
+    }
+  }
+
+  .header_nav {
+    position: absolute;
+    right: 16%;
+    top: 81px;
+    display: flex;
+
+    a {
+      display: block;
+      width: 7rem;
+      height: auto;
+      border-left: 1px solid $beige;
+      font: 700 1.4rem "NanumMyeongjo";
+      color: $beige;
+
+      &:first-child {
+        border-left: none;
+      }
+    }
+  }
+}
+
+.gnb {
+  @include width;
+  @include align_center;
+  height: 52px;
+  font: 2.2rem "BMYEONSUNG";
+  color: $white;
+  background: $header_bg_color;
+  top: 134px;
+  z-index: $gnb_z_index;
+
+  > ul {
+    @include contents_width;
+    display: flex;
+    li {
+      width: 20%;
+      a{
+        line-height: 52px;
+        img {
+          width: 44px;
+          margin-right:5%;
+          margin-left:25%;
+          vertical-align: -30%;
+        }
+      }
+    }
+  }
+}
+
+.gnb_sub {
+  @include width;
+  @include align_center;
+  height: 241px;
+  margin-top: 2px;
+  background: $header_bg_color;
+  z-index: $gnb_z_index;
+}
+.gnb_sub_wrap {
+  @include contents_width;
+  display: flex;
+  ul {
+    width:20%;
+    margin-top: 19px;
+    li {
+      margin-left: 50%;
+      height: 28px;
+      a {
+        font: 700 1.4rem "NanumMyeongjo";
+        color: $beige;
+        &:hover {
+          color: $yellow;
+        }
+      }
+    }
+  }
+}
+
