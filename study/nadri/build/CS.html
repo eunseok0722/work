@@ -7,107 +7,173 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="js/swiper-bundle.js" ></script>
+    <script type="module" src="js/swiper.js"></script>
 </head>
 <body>
 
-<!-- start cs_contents -->
+
+<!--wrapper-->
+<div class="wrapper">
+
+
+    <!--container-->
+    <div class="container">
+
 <!-- start header.html-->
 <div class="skip_nav skip">
-    <a href="#">나드리김밥 소개</a>
-    <a href="#">메뉴 안내</a>
-    <a href="#">매장 찾기</a>
-    <a href="#">프랜차이즈 안내</a>
-    <a href="#">커뮤니티</a>
+    <a href="javascript:void(0);">나드리김밥 소개</a>
+    <a href="javascript:void(0);">메뉴 안내</a>
+    <a href="javascript:void(0);">매장 찾기</a>
+    <a href="javascript:void(0);">프랜차이즈 안내</a>
+    <a href="javascript:void(0);">커뮤니티</a>
 </div>
 
 <header class="header">
-    <h1>
-        <a href="#">
-            <img src="img/main_logo.png" alt="나드리 김밥 홈으로 이동하기">
-                <span class="skip">
-                    시절공감 1988 나드리 김밥
-                </span>
-        </a>
-    </h1>
-    <nav class="header_nav">
-        <a href="#">HOME</a>
-        <a href="#">로그인</a>
-        <a href="#">고객센터</a>
-    </nav>
+    <div class="header_wrap">
+        <h1>
+            <a href="javascript:void(0);">
+                <img src="img/main_logo.png" alt="나드리 김밥 홈으로 이동하기">
+                    <span class="skip">
+                        시절공감 1988 나드리 김밥
+                    </span>
+            </a>
+        </h1>
+        <nav class="header_nav">
+            <a href="javascript:void(0);">HOME</a>
+            <a href="javascript:void(0);">로그인</a>
+            <a href="javascript:void(0);">고객센터</a>
+        </nav>
+    </div>
 </header>
-
+<!-- end header.html-->
+<!-- start gnb.html-->
 <nav class="gnb">
-    <ul>
-        <li>
-            <h2>
-                <a href="">
-                    <img src="img/gnb_icon_01.png" alt="나드리김밥 소개">나드리김밥
+    <div class="gnb_main">
+        <ul>
+            <li>
+                <h2>
+                    <a href="#none" class="triggerToggle">
+                        <img src="img/gnb_icon_01.png" alt="나드리김밥 소개">나드리김밥
+                    </a>
+                </h2>
+            </li>
+            <li>
+                <a href="#none" class="triggerToggle">
+                    <h2><img src="img/gnb_icon_02.png" alt="매뉴안내">매뉴안내</h2>
                 </a>
-            </h2>
-        </li>
-        <li>
-            <a href="">
-                <h2><img src="img/gnb_icon_02.png" alt="매뉴안내">매뉴안내</h2>
-            </a>
-        </li>
-        <li>
-            <a href="">
-                <h2><img src="img/gnb_icon_03.png" alt="매뉴안내">매장찾기</h2>
-            </a>
-        </li>
-        <li>
-            <a href="">
-                <h2><img src="img/gnb_icon_04.png" alt="매뉴안내">프랜차이즈</h2>
-            </a>
-        </li>
-        <li>
-            <a href="">
-                <h2><img src="img/gnb_icon_05.png" alt="매뉴안내">커뮤니티</h2>
-            </a>
-        </li>
-    </ul>
-    <div class="gnb_sub">
+            </li>
+            <li>
+                <a href="#none" class="triggerToggle">
+                    <h2><img src="img/gnb_icon_03.png" alt="매뉴안내">매장찾기</h2>
+                </a>
+            </li>
+            <li>
+                <a href="#none" class="triggerToggle">
+                    <h2><img src="img/gnb_icon_04.png" alt="매뉴안내">프랜차이즈</h2>
+                </a>
+            </li>
+            <li>
+                <a href="#none" class="triggerToggle">
+                    <h2><img src="img/gnb_icon_05.png" alt="매뉴안내">커뮤니티</h2>
+                </a>
+            </li>
+        </ul>
+    </div> <!-- gnb_main-->
+    <div class="gnb_line"></div>
+    <div class="gnb_sub" id="target">
         <div class="gnb_sub_wrap">
             <ul class="gnb_sub_about">
-                <li><a href="#">나드리 소개</a></li>
-                <li><a href="#">CEO인사말</a></li>
-                <li><a href="#">CI/BI 소개</a></li>
-                <li><a href="#">오시는 길</a></li>
+                <li><a href="#none">나드리 소개</a></li>
+                <li><a href="#none">CEO인사말</a></li>
+                <li><a href="#none">CI/BI 소개</a></li>
+                <li><a href="#none">오시는 길</a></li>
             </ul>
             <ul class="gnb_sub_menu">
-                <li><a href="#">김밥류</a></li>
-                <li><a href="#">돈까스</a></li>
-                <li><a href="#">식사류</a></li>
-                <li><a href="#">면류</a></li>
-                <li><a href="#">간식류</a></li>
-                <li><a href="#">계절메뉴</a></li>
+                <li><a href="#none">김밥류</a></li>
+                <li><a href="#none">돈까스</a></li>
+                <li><a href="#none">식사류</a></li>
+                <li><a href="#none">면류</a></li>
+                <li><a href="#none">간식류</a></li>
+                <li><a href="#none">계절메뉴</a></li>
             </ul>
             <ul class="gnb_sub_location">
-                <li><a href="#">매장찾기</a></li>
-                <li><a href="#">매장갤러리</a></li>
+                <li><a href="#none">매장찾기</a></li>
+                <li><a href="#none">매장갤러리</a></li>
             </ul>
             <ul class="gnb_sub_franchise">
-                <li><a href="#">나드리경쟁력</a></li>
-                <li><a href="#">가맹개설절차</a></li>
-                <li><a href="#">창업비용</a></li>
-                <li><a href="#">인테리어컨셉</a></li>
+                <li><a href="#none">나드리경쟁력</a></li>
+                <li><a href="#none">가맹개설절차</a></li>
+                <li><a href="#none">창업비용</a></li>
+                <li><a href="#none">인테리어컨셉</a></li>
             </ul>
             <ul class="gnb_sub_community">
-                <li><a href="#">나들이소식</a></li>
-                <li><a href="#">이벤트</a></li>
-                <li><a href="#">보도및홍보자료</a></li>
-                <li><a href="#">고객센터</a></li>
+                <li><a href="#none">나들이소식</a></li>
+                <li><a href="#none">이벤트</a></li>
+                <li><a href="#none">보도및홍보자료</a></li>
+                <li><a href="#none">고객센터</a></li>
             </ul>
         </div> <!--gnb_sub_wrap-->
     </div><!--gnb_sub-->
 </nav>
-<!-- end header.html-->
-<!-- start contents_cs.html-->
+<!-- end gnb.html-->
+<!-- start quick.html-->
+<nav class="quick">
+    <ul class="quick_list">
+        <li>
+            <a href="#none">
+                <ul class="quick_list_event quick_items">
+                    <li class="show_item">이벤트</li>
+                    <li><img src="img/snb_event_ico.png" alt="이벤트 소개"></li>
+                </ul>
+            </a>
+        </li>
+        <li>
+            <a href="#none">
+                <ul class="quick_list_news quick_items">
+                    <li class="show_item">나들이소식</li>
+                    <li><img src="img/snb_news_ico.png" alt="나들이 소식"></li>
+                </ul>
+            </a>
+        </li>
+        <li>
+            <a href="#none">
+                <ul class="quick_list_cs quick_items">
+                    <li class="show_item">고객센터</li>
+                    <li><img src="img/snb_cs_ico.png" alt="고객센터"></li>
+                </ul>
+            </a>
+        </li>
+        <li>
+            <a href="#none">
+                <ul class="quick_list_store quick_items">
+                    <li class="show_item">오시는 길</li>
+                    <li><img src="img/snb_location_ico.png" alt="오시는 길 안내"></li>
+                </ul>
+            </a>
+        </li>
+        <li>
+            <a href="#none">
+                <ul class="quick_list_franchise quick_items">
+                    <li class="show_item">가맹점 안내</li>
+                    <li><img src="img/snb_store_ico.png" alt="가맹점 안내"></li>
+                </ul>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:void(0);" class="quick_top_btn show_top">
+                ▲TOP
+            </a>
+        </li>
+    </ul>
+</nav>
+<!-- end quick.html-->
+<!-- start contents -->
 <section class="cs">
     <header class="cs_header">
-        <img src="img/news_main_bg.png" alt="소통하는 기업 나드리 김밥">
+        <div class="header_bg_color"></div>
         <h2>소통하는 기업, <span>나드리 김밥</span></h2>
-        <p>나드리 김밥 홈페이지에 방문해주셔서 감사합니다.</p>
+        <p>나드리 김밥 홈페이지에 <span>방문해주셔서 감사합니다.</span></p>
     </header>
 
     <div class="cs_contents">
@@ -118,15 +184,15 @@
             </h2>
             <div class="center_line_brown"></div>
 
-            <h3>나드리김밥에게 무엇이든 물어보세요.</h3>
-            <p>문의하신 내용에 대한 답변은 <span>업무일 기준으로 2~3일</span>정도 소요될 수 있습니다.</p>
+            <h3>나드리김밥에게 <em>무엇이든 물어보세요.</em></h3>
+            <p>문의하신 내용에 대한 답변은 <em><span>업무일 기준으로 2~3일</span></em>정도 소요될 수 있습니다.</p>
         </div>
 
         <div class="cs_form">
             <table>
                 <tr>
                     <th>문의하기</th>
-                    <th><span>(필수)</span> 항목은 반드시 입려개 주셔야 문의접수가 가능합니다.</th>
+                    <th><span>(필수)</span> 항목<em>은</em> 반드시 입력<em>해 주셔야 문의접수가 가능합니다.</em></th>
                 </tr>
                 <tr>
                     <td><label for="form_name" >이 름 <span>(필수)</span></label></td>
@@ -150,10 +216,10 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><label for="form_email1">이 메 일<span class="hide">(필수)</span></label></td>
+                    <td><label for="form_email1">이 메 일 <span class="hide">(필수)</span></label></td>
                     <td>
-                        <input type="text" id="form_email1"> @
-                        <input type="text" id="form_email2">
+                        <input type="text" id="form_email1"  required> @
+                        <input type="text" id="form_email2" required>
                         <select name="email" id="form_email_select">
                             <option value="">직접입력</option>
                             <option value="naver.com">naver.com</option>
@@ -169,12 +235,12 @@
                 </tr>
                 <tr>
                     <td><label for="form_contents">내 용 <span>(필수)</span></label></td>
-                    <td><textarea name="form_contents" id="form_contents" cols="120" rows="7" wrap="hard" required></textarea></td>
+                    <td><textarea name="form_contents" id="form_contents" wrap="hard" required></textarea></td>
                 </tr>
 
             </table>
 
-            <textarea readonly cols="167" rows="7" class="Privacy">1. 개인 정보의 이용 목적
+            <textarea readonly class="Privacy">1. 개인 정보의 이용 목적
 여러분이 제공해주신 개인정보는 보다 정확한 서비스를 제공하기 위해 이용되며, 이용약관에 명시된 목적 이외에 다른 용도로 이용하거나 본인의 승낙 없이 제3자에게 개인정보를 제공하지 않습니다. 다만, 다음 각 사항에 해당하는 경우에는 예외로 제3자와 공유될 수 있습니다.
 1) 관계법령에 의하여 수사상의 목적으로 관계기관으로부터 요구가 있을 경우
 2) 기타 관계법령에서 정한 절차에 따른 요청이 있는 경우
@@ -183,7 +249,7 @@
 1. 개인 정보의 이용 목적
 
             </textarea>
-            <input type="checkbox" class="agree"> 개인정보 취급방침에 동의합니다.
+            <input type="checkbox" class="agree" id="form_agree"> <label for="form_agree">개인정보 취급방침에 동의합니다.</label>
 
             <button class="btn_cs_list">문의하기</button>
 
@@ -191,7 +257,9 @@
     </div>
 
 </section>
-<!-- end contents_cs.html-->
+
+
+<!-- end contents -->
 <!-- start footer.html-->
 <footer class="footer">
 
@@ -212,13 +280,17 @@
             <address><span>대표전화 : 1588-7178 <br>팩스: 053-7812-3959</span></address>
         </li>
     </ul>
-    <small>Copyright &copy; Nadri<em>FS</em> Inc. All Rights Reserved.</small>
+    <small>Copyright &copy; Nadri<span>FS</span> Inc. All Rights Reserved.</small>
 
 </footer>
+
 <!-- end footer.html-->
 
 
-<!-- end cs_contents -->
+    </div><!--//container-->
 
+</div><!--//wrapper-->
+<script type="text/javascript" src="js/gnb_slide_toggle.js"></script>
+<script type="text/javascript" src="js/quick_menu.js"></script>
 </body>
 </html>
