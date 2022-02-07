@@ -30,7 +30,7 @@
             height: auto;
             margin-right: 0.8rem;
             overflow: hidden;
-            transition: width 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+            transition: width 0.3s cubic-bezier(.51,0,.53,1);
             position: absolute;
             right:5rem;
       }
@@ -97,7 +97,8 @@
   display: block;
   text-align: center;
   width:5rem;
-  font: 0 "Lato";
+  font-size: 0;
+  font-family: "Lato";
   color: $charcoal;
   height:0;
   overflow: hidden;

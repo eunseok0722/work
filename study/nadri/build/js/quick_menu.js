@@ -2,6 +2,7 @@ const quickMenu = document.querySelector('.quick'),
 showItem = document.querySelectorAll('.show_item'),
 showTop = document.querySelector('.show_top');
 
+// .quick hover 동작 구현
 function activate() {
     for (i=0; i<showItem.length; i++) {
     showItem[i].classList.add('quick_btn_info');}

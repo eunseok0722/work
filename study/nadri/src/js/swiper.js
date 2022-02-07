@@ -1,6 +1,6 @@
 //main_menu_slide 스와이퍼 동작 구현
 const MainSwiper = new Swiper('.main_menu_slide', {
-    slidesPerView: 4.2,
+    slidesPerView: 2.2,
     spaceBetween: 20,
     centeredSlides: false,
     loop: true,
@@ -30,7 +30,7 @@ const MainSwiper = new Swiper('.main_menu_slide', {
 //main_franchise_issue_contents 스와이퍼 동작구현
 const MainFranchiseSwiper = new Swiper('.main_franchise_issue_contents', {
     slidesPerView: 2,
-    spaceBetween: 20,
+    spaceBetween: 5,
     direction: 'vertical',
     // autoheight: false,
     // centeredSlides: false,
@@ -59,7 +59,7 @@ const MainFranchiseSwiper = new Swiper('.main_franchise_issue_contents', {
 
 //main_store_list 스와이퍼 동작 구현
 const MainStoreSwiper = new Swiper('.main_store_list', {
-    slidesPerView: 3,
+    slidesPerView: 1.25,
     spaceBetween: 0,
     centeredSlides: true,
     loop: true,
@@ -74,7 +74,7 @@ const MainStoreSwiper = new Swiper('.main_store_list', {
             autoheight: true
         },
         641: {
-            slidesPerView: 2,
+            slidesPerView: 1.5,
             spaceBetween: 0,
             autoheight: true
         },
@@ -89,8 +89,8 @@ const MainStoreSwiper = new Swiper('.main_store_list', {
 
 //news_contents 스와이퍼 동작 구현
 const NewsSwiper = new Swiper('.news_swiper', {
-    slidesPerView: 5.68,
-    spaceBetween: 10,
+    slidesPerView: 2.4,
+    spaceBetween: 5,
 
     navigation: {
         nextEl: '.swiper-button-next',
@@ -113,10 +113,9 @@ const NewsSwiper = new Swiper('.news_swiper', {
 });
 
 //menu_contents 스와이퍼 동작 구현
-
 const MenuSwiper = new Swiper('.menu_contents_slide', {
-    slidesPerView: 5,
-    spaceBetween: 30,
+    slidesPerView: 1.4,
+    spaceBetween: 5,
     centeredSlides: true,
     loop: true,
     navigation: {
