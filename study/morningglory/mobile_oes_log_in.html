@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MorningGlory Mobile Page</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/mobile_login.css">
+    <link rel="shortcut icon" href="image/favicon.ico">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script>
+        $(function () {
+
+            $(".hamburger").on("click", function () {
+                $("nav").animate({ marginLeft: "100%" }, 300)
+            });
+            $(".cross").on("click", function () {
+                $("nav").animate({ marginLeft: "-100%" }, 300);
+            });
+        })
+    </script>
+</head>
+
+<body>
+
+    <header id="header">
+        <div class="cf">
+            <h1>
+                <button class="logo">
+                    <a href="./mobile_oes.html"><img
+                            src="image/morningglory_icon.png" alt="logo"></a>
+                </button>
+            </h1>
+
+            <button class="hamburger"><img src="image/menu.png" alt="menu"></button>
+            <div class="topicon cf">
+                <button><a href="./mobile_oes_log_in.html"><img
+                            src="image/mypage.png" alt="mypage"></a></button>
+                <button><a href="./mobile_oes_search.html"><img
+                            src="image/search.png" alt="search"></a></button>
+            </div>
+        </div>
+
+    </header>
+
+    <nav>
+        <div id="menu">
+            <button class="cross"><img src="image/x.png" alt="X"></button>
+
+            <ul class="mainmenu cf">
+                <li><a href="./mobile_oes.html#">Home</a></li>
+                <li><a href="./mobile_oes.html#todaysbest">Best</a></li>
+                <li><a href="./mobile_oes.html#event">Event</a></li>
+                <li><a href="./mobile_oes.html#new">New</a></li>
+            </ul>
+            <div id="category" class="cf">
+                <h3><a href="#">Category</a></h3>
+                <ul class="sub">
+                    <li><a href="./category.html#notects">노트</a></li>
+                    <li><a href="./category.html#hobbycts">취미/완구</a></li>
+                    <li><a href="./category.html#travelcts">여행/레포츠</a></li>
+                </ul>
+                <ul class="sub">
+                    <li><a href="./category.html#designcts">디자인문구</a></li>
+                    <li><a href="./category.html#fashioncts">패션/잡화</a></li>
+                    <li><a href="./category.html#householdcts">생활용품</a></li>
+                </ul>
+            </div>
+            <!--category-->
+
+            <div id="brand" class="cf">
+                <h3><a href="#">Brand</a></h3>
+                <ul class="sub2 cf">
+                    <li><a href="#">MD's Pick</a></li>
+                    <li><a href="#">About us</a></li>
+                </ul>
+            </div>
+
+            <div id="mypage" class="cf">
+                <h3><a href="./mobile_oes_log_in.html">My Page</a></h3>
+                <ul class="sub2 cf">
+                    <li><a href="./mobile_oes_log_in.html">내 마음</a></li>
+                    <li><a href="./mobile_oes_log_in.html">내 정보</a></li>
+                </ul>
+            </div>
+
+            <div id="cs">
+                <h3><a href="#">Customer Service Center</a></h3>
+
+                <ul class="sub2 cf">
+                    <li>
+                        <p>
+                            <span>&phone; 02.2179.0380 </span>
+                            <span>Mon-Fri AM 10:00 - PM 5:00</span>
+                            <span> Lunch PM 12:00 PM 1:00 </span>
+                            <span>Sat.Sun.Holiday Off</span>
+                        </p>
+                    </li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--menu 종료-->
+
+    <aside>
+        <a href="#">
+            <img src="image/signinevent.png" alt="모닝글로리 회원에게 드리는 특별한 혜택">
+        </a>
+    </aside>
+
+
+    <section id="login">
+        <h2>LOG IN</h2>
+        <form action="insert.php" method="post">
+            <ul>
+                <li>
+                    <label for="id">ID</label>
+                    <input type="text" id="id" maxlength="12" required autofocus>
+                </li>
+                <li>
+                    <label for="pw">PW</label>
+                    <input type="password" id="pw" maxlength="15" required autofocus>
+                </li>
+                <li>
+                    <button>Log in</button>
+                </li>
+            </ul>
+        </form>
+
+        <ul class="button cf">
+            <li><button><a href="./member.html">Sign in</a></button></li>
+            <li><button>Wrong ID/PW</button></li>
+        </ul>
+
+        <div>
+            <p>Sign in with</p>
+            <ul class="cf">
+                <li><a href="#"><img src="image/google.png" alt="google"></a></li>
+                <li><a href="#"><img src="image/facebook.png" alt="facebook"></a></li>
+                <li><a href="#"><img src="image/apple.png" alt="apple"></a></li>
+            </ul>
+        </div>
+
+    </section>
+
+
+    <div id="menu">
+        <div id="cs">
+            <h3><a href="#">Customer Service Center</a></h3>
+
+            <ul class="sub2 cf">
+                <li>
+                    <a href="#"><span class="csnumber">&phone; 02.2179.0380</span></a>
+                    <p>
+                        <span>Mon-Fri AM 10:00 - PM 5:00</span>
+                        <span>Lunch PM 12:00 PM 1:00</span>
+                        <span>Sat.Sun.Holiday Off</span>
+                    </p>
+                </li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>

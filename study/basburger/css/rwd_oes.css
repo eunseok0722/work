@@ -1,0 +1,2445 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: "MaruBuri";
+    src: url(../font/MaruBuri-Regular.woff) format('woff');
+}
+
+@font-face {
+    font-family: "NanumGothic";
+    src: url(../font/NanumGothic.woff) format('woff');
+}
+
+
+
+body {
+    font: 1rem "MaruBuri", "NanumGothic", "Gothic";
+    color: #654;
+    min-width: 360px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    line-height: 1.6;
+    font: 1rem "MaruBuri", "NanumGothic", "Gothic";
+}
+
+h1 {
+    font-weight: normal;
+    color: #c96;
+}
+
+h2 {
+    font-weight: normal;
+    color: inherit;
+}
+
+h3 {
+    font-weight: normal;
+    color: inherit;
+}
+
+p {
+    line-height: 1.6;
+    color: inherit;
+}
+
+button {
+    border: 0;
+    background: none;
+    transition: all 0.3s ease;
+    font: 0.8rem "MaruBuri", "NanumGothic", "Gothic";
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+
+.title {
+    display: block;
+    font-size: 1.8rem;
+    color: #c96;
+}
+
+.title2 {
+    display: block;
+    font-size: 1.2rem;
+}
+
+.subtitle {
+    display: block;
+    font-size: 0.9rem;
+}
+
+/* arrow */
+.arrow {
+    text-align: center;
+}
+
+.arrow a {
+    display: inline-block;
+}
+
+.prev {
+    text-indent: -9999px;
+    width: 2rem;
+    height: 2rem;
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 5.5%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 2rem;
+}
+
+.prev:before {
+    content: "";
+    width: 0.75rem;
+    height: 0.75rem;
+    border: 2px solid #975;
+    position: absolute;
+    left: 40%;
+    top: 30%;
+    box-sizing: border-box;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    transform: rotate(-45deg);
+}
+
+.next {
+    text-indent: -9999px;
+    width: 2rem;
+    height: 2rem;
+    background: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    right: 5.5%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    border-radius: 2rem;
+}
+
+.next:before {
+    content: "";
+    width: 0.75rem;
+    height: 0.75rem;
+    border: 2px solid #975;
+    position: absolute;
+    right: 40%;
+    top: 30%;
+    box-sizing: border-box;
+    border-left-width: 0;
+    border-bottom-width: 0;
+    transform: rotate(45deg);
+}
+
+
+
+/* navi roll button */
+.rollbtn {
+    width: 7rem;
+    margin: 5% auto;
+    transform: translate(10%, 0);
+}
+
+.rollbtn li {
+    float: left;
+    margin-right: 10%;
+    transition: all .3s;
+}
+
+.rollbtn li:last-of-type {
+    margin-right: 0;
+}
+
+.rollbtn li a {
+    display: block;
+    border-radius: 1rem;
+    height: 100%;
+}
+
+.navbtn {
+    width: 10%;
+    height: 0.6rem;
+    background: rgba(102, 85, 68, 0.5);
+    border-radius: 0.6rem;
+    margin: 0 auto;
+}
+
+.navbtn_over {
+    width: 40%;
+    height: 0.6rem;
+    background: #c96;
+    border-radius: 1rem;
+    margin: 0 auto;
+}
+
+/* logo */
+#mainmenu {
+    width: 100%;
+    height: 4rem;
+    position: relative;
+}
+
+#mainmenu h1 {
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#mainmenu h1 a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#mainmenu h1 a img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* menu */
+#mainmenu nav {
+    color: #975;
+}
+
+#mainmenu nav ul {
+    width: 40%;
+}
+
+.navlft {
+    float: left;
+}
+
+.navrit {
+    float: right;
+}
+
+#mainmenu nav ul li {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+#mainmenu nav ul li a {
+    display: block;
+    width: 100%;
+    height: 4rem;
+    line-height: 4rem;
+    font-size: 0.8rem;
+    transition: all .3s;
+}
+
+#mainmenu nav ul li a:hover {
+    color: #c96;
+    transform: translateY(-5%);
+}
+
+
+/* main menu top */
+#mainmenudiv.sticky {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background: #fff;
+}
+
+
+
+/* mainbnr */
+#main {
+    width: 100%;
+    background: #fcf8ef;
+    position: relative;
+}
+
+.mainbnr {
+    width: 100%;
+    overflow: hidden;
+}
+
+.bnrimg {
+    width: 300%;
+    position: relative;
+}
+
+.bnrimg li {
+    width: 33.33%;
+    float: left;
+}
+
+.bnrimg li a img {
+    width: 100%;
+}
+
+.m {
+    display: block;
+}
+
+.p {
+    display: none;
+}
+
+
+#bnrcts {
+    overflow: hidden;
+    width: 100%;
+}
+
+.bnrcts {
+    width: 300%;
+    padding-bottom: 20%;
+    position: relative;
+}
+
+.bnrcts li {
+    width: 33.33%;
+    float: left;
+    text-align: center;
+}
+
+.bnrcts li span {
+    display: block;
+    line-height: 1.6;
+    transition: all 0.3s;
+}
+
+.bnrcts li .title {
+    margin-top: 5%;
+}
+
+.bnrcts li span:nth-child(2) {
+    margin-top: 5%;
+}
+
+.bnrcts li button {
+    color: #fff;
+    background: #c96;
+    width: 8rem;
+    height: 2.5rem;
+    margin-top: 7.5%;
+    transition: all 0.3s;
+    line-height: 2.5rem;
+}
+
+
+.bnrcts li button:hover {
+    transform: scale(1.05);
+    background: #c96;
+}
+
+
+
+
+
+#menu {
+    width: 100%;
+}
+
+#menu header {
+    width: 100%;
+    text-align: center;
+    margin-top: 15%;
+}
+
+#menu header p {
+    margin-top: 5%;
+}
+
+.menubox {
+    width: 90%;
+    margin: 5% auto 0;
+}
+
+.menubox>div {
+    float: left;
+    width: 48.5%;
+    margin-right: 3%;
+}
+
+.menubox>div:last-child {
+    margin-right: 0;
+}
+
+.menubox>div article {
+    position: relative;
+}
+
+.menubox>div article a {
+    display: block;
+    width: 100%;
+    transition: all 0.3s;
+}
+
+.menubox>div article a:hover {
+    transform: translateY(-2.5%);
+}
+
+.menubox>div article a img {
+    width: 100%;
+}
+
+.number {
+    color: #fcf8ef;
+    background: #654;
+    width: 2.5rem;
+    height: 2rem;
+    text-align: center;
+    border-radius: 0 0 1rem 0;
+    line-height: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.menubox>div article a .text {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    display: block;
+    width: 90%;
+}
+
+.menubox>div article a:hover .text {
+    transform: translateY(100%);
+    opacity: 1;
+}
+
+.menubox>div article a .text .menutitle {
+    color: #fff;
+    line-height: 1.6;
+    font-size: inherit;
+}
+
+.menubox>div article a .text .menucts {
+    color: #fcf8ef;
+    line-height: 1.6;
+}
+
+.menuhead {
+    color: #654;
+    font-weight: 500;
+    width: 100%;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+}
+
+.style1 {
+    font: 2.75rem "MaruBuri", "NanumGothic", "Gothic";
+    color: #f2f2f2aa;
+}
+
+.style2 {
+    font: 1.5rem "MaruBuri", "NanumGothic", "Gothic";
+    color: #f2f2f2aa;
+    line-height: 1;
+    display: block;
+    text-align: right;
+    width: 90%;
+}
+
+.menutitle {
+    display: block;
+    color: #c96;
+    font-size: 0.9rem;
+}
+
+.menucts {
+    display: block;
+    color: #654;
+    font-size: 0.7rem;
+}
+
+.rightbox article:last-child {
+    margin-top: 7.5%;
+}
+
+.menulist {
+    width: 100%;
+    margin-top: 5%;
+    padding: 5% 0 10%;
+    position: relative;
+    text-align: center;
+    background: #fcf8ef;
+    box-sizing: border-box;
+}
+
+.menulist ul {
+    width: 90%;
+    margin: 0 auto 5%;
+}
+
+.menulist ul li {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0 0.05%;
+}
+
+.menulist ul li a {
+    line-height: 1.4;
+    display: block;
+}
+
+.menulist ul li a img {
+    width: 100%;
+    transition: all 2s ease;
+}
+
+
+.menulist .menutitle {
+    margin-top: 2.5%;
+}
+
+.menulist button {
+    width: 8rem;
+    height: 2.5rem;
+    background: #c96;
+    color: #fcf8ef;
+    margin-top: 2.5%;
+    line-height: 2.3rem;
+}
+
+button.slick-prev {
+    text-indent: -9999px;
+    width: 2rem!important;
+    height: 2rem!important;
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 5.5%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 2rem;
+    z-index: 2;
+}
+
+button.slick-prev:before {
+    content: "";
+    width: 0.75rem;
+    height: 0.75rem;
+    border: 2px solid #975;
+    position: absolute;
+    left: 40%;
+    top: 30%;
+    box-sizing: border-box;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    transform: rotate(-45deg);
+}
+
+button.slick-next {
+    text-indent: -9999px;
+    width: 2rem!important;
+    height: 2rem!important;
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    right: 5.5%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    border-radius: 2rem;
+    z-index: 2;
+}
+
+button.slick-next:before {
+    content: "";
+    width: 0.75rem;
+    height: 0.75rem;
+    border: 2px solid #975;
+    position: absolute;
+    right: 40%;
+    top: 30%;
+    box-sizing: border-box;
+    border-left-width: 0;
+    border-bottom-width: 0;
+    transform: rotate(45deg);
+}
+
+
+
+#whatsnew {
+    width: 100%;
+    margin-top: 15%;
+}
+
+#whatsnew header {
+    width: 100%;
+    text-align: center;
+}
+
+#whatsnew header p {
+    padding-top: 5%;
+}
+
+.snsicon {
+    width: 50%;
+    margin: 5% auto 0;
+}
+
+.snsicon li {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+}
+
+.snsicon li a img {
+    width: 2.5rem;
+}
+
+.comment {
+    display: block;
+    font-size: 0.6rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.instafeed {
+    width: 100%;
+    padding: 5% 0 15%;
+    background: linear-gradient(0, #fcf8ef 50%, #fff 50.01%);
+    overflow: hidden;
+    position: relative;
+}
+
+.instafeed ul {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.instafeed ul li {
+    width: 100%;
+    margin: 0 0.5%;
+}
+
+#aboutbas {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 15%;
+    background: linear-gradient(0, #fcf8ef 60%, #fff 60.01%);
+}
+
+#aboutbas header {
+    margin-top: 15%;
+}
+
+#aboutbas h3 {
+    color: #654;
+    margin-top: 10%;
+}
+
+#aboutbas h3:nth-of-type(2) {
+    color: #c96;
+    margin-top: 15%;
+}
+
+#aboutbas p {
+    margin: 5% 0;
+    line-height: 2.5;
+}
+
+#aboutbas p:nth-of-type(2) {
+    color: #654;
+}
+
+#aboutbas p:first-of-type span:nth-child(3) {
+    margin-top: 3%;
+}
+
+#aboutbas p span {
+    display: block;
+}
+
+.basbnr {
+    width: 75%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.basbnr ul {
+    width: 100%;
+}
+
+.basbnr ul li {
+    width: 100%;
+    float: left;
+}
+
+.basbnr ul li img {
+    width: 100%;
+}
+
+
+
+
+#aboutbas button {
+    width: 8rem;
+    height: 2.5rem;
+    margin-top: 5%;
+    background: #c96;
+    color: #fcf8ef;
+    line-height: 2.5rem;
+}
+
+.btn2 {
+    display: none;
+}
+
+.btn1 {
+    display: inline-block;
+}
+
+#locations {
+    width: 100%;
+}
+
+#locations header {
+    text-align: center;
+    padding: 5% 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+#locations header h3 {
+    margin-top: 3%;
+}
+
+.locationcts {
+    width: 100%;
+    background: #fcf8ef;
+}
+
+.locationlft {
+    width: 90%;
+    margin: 0 auto 5%;
+    padding-top: 10%;
+}
+
+.locationlft h2 {
+    margin-bottom: 5%;
+    text-indent: 1%;
+    color: #c96;
+}
+
+.locationlft p {
+    display: block;
+    width: 100%;
+    background: #fff;
+    padding: 0.1% 5% 5%;
+    box-sizing: border-box;
+}
+
+.locationlft .menucts {
+    text-indent: 0.5rem;
+    margin-top: 2%;
+}
+
+.locationlft .menutitle {
+    margin-top: 5%;
+}
+
+
+.locationrit {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 5%;
+    overflow: hidden;
+}
+
+.locationrit img {
+    width: 100%;
+}
+
+.locationrit div {
+    width: 100%;
+}
+
+.locationlist {
+    margin: 5% 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.locationbtn {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.locationbtn li {
+    float: left;
+    width: 20%;
+    height: 1.5rem;
+    margin: 0 2.5%;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.locationbtn a {
+    display: block;
+    font-size: 0.5rem;
+    line-height: 1.5rem;
+}
+
+.lobtnon {
+    color: #fff;
+    background: crimson;
+    border-radius: 1rem;
+}
+
+.lobtnoff {
+    color: #654;
+    background: #eee;
+    border-radius: 1rem;
+}
+
+.locationpic {
+    width: 90%;
+    margin: 5% auto 15%;
+    text-align: center;
+    position: relative;
+}
+
+.locationpic ul {
+    width: 100%;
+}
+
+.locationpic ul li {
+    width: 100%;
+    margin: 0 0.05%
+}
+
+.locationpic ul li a {
+    display: block;
+}
+
+.locationpic ul li a span {
+    padding-top: 2.5%;
+    color: #654;
+}
+
+.locationpic ul li img {
+    width: 100%;
+    border: 4px inset #c96;
+    box-sizing: border-box;
+}
+
+.locationinfo {
+    display: none;
+}
+
+.barbnr {
+    width: 100%;
+    overflow: hidden;
+}
+
+.barbnr img {
+    width: 100%;
+}
+
+#bottom {
+    width: 100%;
+    padding-top: 15%;
+    text-align: center;
+    background: linear-gradient(0, #fcf8ef 10%, #f2f2f2 10.01%);
+    box-sizing: border-box;
+}
+
+#bottom header h2 {
+    margin: 5% 0;
+}
+
+#bottom h2 span {
+    display: block;
+    line-height: 2;
+}
+
+#bottom aside {
+    width: 80%;
+    margin: 5% auto 0;
+    background: #fff;
+    padding: 7% 5%;
+}
+
+.sns {
+    width: 100%;
+}
+
+.sns li {
+    float: left;
+    width: 50%;
+}
+
+.sns li:nth-of-type(2) {
+    margin-top: 2.5%;
+}
+
+/* .sns li:nth-of-type(2) span {font-size:0.7rem;} */
+.sns li a img {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-bottom: 10%;
+}
+
+.sns li .subtitle {
+    line-height: 1.6;
+    display: block;
+}
+
+.sns li .comment {
+    color: #c96;
+}
+
+.sns li .menucts {
+    line-height: 1.6;
+}
+
+.sns li button {
+    width: 80%;
+    height: 2rem;
+    background: #c96;
+    color: #fcf8ef;
+    font-family: inherit;
+    margin-top: 15%;
+}
+
+
+footer {
+    width: 100%;
+    background: #fcf8ef;
+    padding-top: 25%;
+}
+
+footer div {
+    width: 80%;
+    margin: 0 auto;
+}
+
+footer div img {
+    width: 100%;
+}
+
+footer p {
+    width: 80%;
+    text-align: right;
+    margin: 10% auto 0;
+}
+
+footer p .title {
+    color: inherit;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+footer p span:last-of-type {
+    color: #c96;
+}
+
+address {
+    font-style: inherit;
+    width: 90%;
+    margin: 10% auto 0;
+    padding-bottom: 2%;
+}
+
+address small {
+    display: block;
+    font-size: 0.5rem;
+    line-height: 1.6;
+}
+
+address small span {
+    display: block;
+}
+
+.pageend {
+    width: 100%;
+    background: #654;
+    height: 1rem;
+}
+
+
+
+/* wayani */
+.wp1, .wp2, .wp3, .wp5, .wp6, .wp7, .wp8, .wp9 {
+    visibility: hidden;
+}
+
+.fadeInUp, .fadeInRight, .fadeInLeft {
+    visibility: visible;
+}
+
+
+
+
+@media screen and (min-width:430px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    .title2 {
+        font-size: 1.4rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    #mainmenu nav ul li a {
+        font-size: 0.9rem;
+    }
+
+    .menutitle {
+        font-size: inherit;
+    }
+
+    .menucts {
+        font-size: 0.8rem;
+    }
+
+    .locationbtn li {
+        width: 20%;
+        height: 2rem;
+    }
+
+    .locationbtn a {
+        font-size: 0.9rem;
+        line-height: 2rem;
+    }
+
+    .sns li a img {
+        width: 3rem;
+        height: 3rem;
+        margin-bottom: 5%;
+    }
+
+    .sns li button {
+        margin-top: 10%;
+    }
+
+    .sns li:nth-of-type(2) {
+        margin-top: 0;
+    }
+
+    .sns li:nth-of-type(2) span {
+        font-size: 0.9rem;
+    }
+
+    #menu header p span:nth-of-type(2) {
+        display: inline-block;
+    }
+
+    #menu header p span:last-of-type {
+        display: inline-block;
+    }
+
+}
+
+@media screen and (min-width:500px) {
+    #mainmenu nav ul li a {
+        font-size: 1rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .title2 {
+        font-size: 1.5rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+        line-height: 2;
+    }
+
+    .menutitle {
+        font-size: 1.1rem;
+        line-height: 2;
+    }
+
+    .menucts {
+        font-size: 0.9rem;
+    }
+
+    .comment {
+        font-size: 0.8rem;
+    }
+
+    .style1 {
+        font-size: 2rem;
+    }
+
+    .style2 {
+        font-size: 1.25rem;
+    }
+
+    .snsicon li a img {
+        width: 3rem;
+    }
+
+    .bnrcts li button {
+        width: 10rem;
+        font-size: 1rem;
+    }
+
+
+    .menulist button {
+        width: 10rem;
+        font-size: 1rem;
+    }
+
+
+    #aboutbas button {
+        width: 10rem;
+        font-size: 1rem;
+    }
+
+    .locationbtn li {
+        height: 1.75rem;
+    }
+
+    .locationbtn li a {
+        font-size: inherit;
+        line-height: 1.75rem;
+    }
+
+    .sns li:nth-of-type(2) span {
+        font-size: inherit;
+    }
+
+    .sns li button {
+        margin-top: 7.5%;
+        height: 2.5rem;
+        font-size: 1rem;
+    }
+
+    address small {
+        font-size: 0.65rem;
+    }
+
+    address small span {
+        display: inline;
+    }
+
+    #bottom aside {
+        padding: 7% 3%;
+        box-sizing: border-box;
+    }
+
+
+}
+
+@media screen and (min-width:570px) {
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .title2 {
+        font-size: 1.7rem;
+    }
+
+    .menutitle {
+        font-size: 1.1rem;
+    }
+
+    .menucts {
+        font-size: 0.9rem;
+    }
+
+    .comment {
+        font-size: 0.9rem;
+    }
+
+    .locationbtn li {
+        height: 2rem;
+    }
+
+    .locationbtn li a {
+        font-size: inherit;
+        line-height: 2rem;
+    }
+
+    address small {
+        font-size: 0.75rem;
+    }
+
+}
+
+@media screen and (min-width:641px) {
+    .rollbtn {
+        width: 8rem;
+    }
+
+    .navbtn {
+        width: 10%;
+        height: 0.75rem;
+        background: rgba(102, 85, 68, 0.5);
+        border-radius: 0.75rem;
+        margin: 0 auto;
+    }
+
+    .navbtn_over {
+        width: 40%;
+        height: 0.75rem;
+        background: #c96;
+        border-radius: 0.75rem;
+        margin: 0 auto;
+    }
+
+    #mainmenu {
+        height: 5rem;
+        border-bottom: 1px solid #eee;
+    }
+
+    #mainmenu h1 {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    #mainmenu nav ul li a {
+        font-size: 1.3rem;
+        height: 5rem;
+        line-height: 5rem;
+    }
+
+    .mainbnr {
+        width: 75%;
+        margin: 0 auto;
+        padding-top: 5%;
+    }
+
+    .bnrcts li .title {
+        margin-top: 5%;
+    }
+
+    .bnrcts li span:nth-child(2) {
+        margin-top: 2.5%;
+    }
+
+    .bnrcts li span:last-of-type {
+        margin-top: 1%;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+    }
+
+    .sns li:last-of-type span {
+        line-height: 2;
+    }
+
+    .sns li button {
+        margin-top: 7.5%;
+        width: 12rem;
+        height: 3rem;
+        font-size: 1.2rem;
+    }
+
+    .bnrcts li button {
+        width: 12rem;
+        height: 3rem;
+        font-size: 1.2rem;
+        line-height: 3rem;
+    }
+
+    .menulist button {
+        width: 12rem;
+        height: 3rem;
+        font-size: 1.2rem;
+        line-height: 3rem;
+    }
+
+
+    .menulist ul li a .text .menutitle {
+        color: #fff;
+        font-size: 1rem;
+    }
+
+    .menulist ul li a .text .menucts {
+        color: #fcf8ef;
+        font-size: 0.75rem;
+    }
+
+    .style1 {
+        font-size: 4rem;
+    }
+
+    .style2 {
+        font-size: 2rem;
+    }
+    .instafeed ul {
+        width:100%;
+    }
+
+    #aboutbas button {
+        width: 12rem;
+        height: 3rem;
+        font-size: 1.2rem;
+        line-height: 3rem;
+    }
+
+    .snsicon {
+        width: 30%;
+    }
+
+    .menulist {
+        margin: 5% 0 10%;
+        padding: 5% 0 10%;
+    }
+
+    .number {
+        color: #fcf8ef;
+        background: #654;
+        width: 3rem;
+        height: 2.5rem;
+        text-align: center;
+        border-radius: 0 0 1rem 0;
+        line-height: 2.5rem;
+        font-size: 1.3rem;
+    }
+
+
+
+    #bottom aside {
+        width: 75%;
+        padding: 7.5% 5%;
+        box-sizing: border-box;
+    }
+
+    .sns li a img {
+        width: 4rem;
+        height: 4rem;
+        margin-bottom: 5%;
+    }
+
+    .sns li:last-of-type .subtitle {
+        line-height: 2;
+    }
+
+    .mainbnr img {
+        border: 5px inset #c96;
+        box-sizing: border-box;
+    }
+
+    .locationbtn {
+        width: 50%;
+    }
+
+
+
+    footer div {
+        width: 75%;
+    }
+
+    footer p {
+        width: 75%;
+    }
+
+}
+
+@media screen and (min-width:780px) {
+    .mainbnr {
+        width: 60%;
+        margin: 0 auto;
+        padding-top: 5%;
+    }
+
+    .menulist {
+        width: 100%;
+    }
+
+    
+    .menulist ul {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .locationcts {
+        width: 100%;
+        padding: 0 2.5%;
+        box-sizing: border-box;
+    }
+
+    .locationcts>div {
+        float: left;
+        width: 49%;
+        margin-right: 2%;
+    }
+
+    .locationcts>div:last-of-type {
+        margin-right: 0;
+    }
+
+    .locationlft {
+        padding-top: 0;
+        margin-top: 1rem;
+    }
+
+    .locationlft {
+        margin-bottom: 1rem;
+    }
+
+    .locationlft p {
+        padding: 0.1% 7% 0;
+        height: 18.5rem;
+        box-sizing: border-box;
+    }
+
+    .locationlft .menutitle {
+        text-indent: -2.5%;
+    }
+
+    .locationlft .menucts {
+        text-indent: 0;
+    }
+
+    .locationrit {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .locationrit img {
+        height: 18.5rem;
+        object-fit: cover;
+        margin-top: 4.5rem;
+    }
+
+    .locationpic {
+        margin-bottom: 5%;
+    }
+
+    .snsicon {
+        width: 27.5%;
+    }
+
+    #bottom aside {
+        width: 60%;
+    }
+
+    .basbnr {
+        width: 60%;
+    }
+
+    footer div {
+        width: 60%;
+    }
+
+    footer p {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width:920px) {
+    .title {
+        font-size: 2.25rem;
+    }
+
+    .title2 {
+        font-size: 1.8rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .comment {
+        font-size: 1rem;
+    }
+
+    .menutitle {
+        font-size: 1.1rem;
+        line-height: 2;
+    }
+
+    .menucts {
+        font-size: 1rem;
+        line-height: 2;
+    }
+
+
+    .rollbtn {
+        position: absolute;
+        left: 5%;
+        bottom: 5%;
+        z-index: 1;
+    }
+
+    .rollbtn li a {
+        display: block;
+    }
+
+
+    #bnrcts {
+        float: left;
+        width: 45%;
+        margin: 17.5% 0 0 3%;
+        padding-bottom: 20%;
+        position: relative;
+    }
+
+    .mainbnr {
+        float: right;
+        width: 50%;
+        margin: 0;
+        padding-top: 0;
+        height: 100%;
+    }
+
+    .mainbnr img {
+        border: 0;
+    }
+
+    .bnrcts {
+        padding-bottom: 0;
+    }
+
+    .bnrcts li .title {
+        margin-top: 20%;
+    }
+
+    .m {
+        display: none;
+    }
+
+    .p {
+        display: block;
+    }
+
+
+    .menufloat {
+        width: 90%;
+        margin: 4rem auto 2rem;
+    }
+
+    #menu header {
+        float: left;
+        width: 30.33%;
+        text-align: justify;
+        margin-top: 0;
+        margin-right: 3%;
+    }
+
+    .menubox {
+        width: 66.66%;
+        margin: 0;
+        float: right;
+    }
+
+    .menulist {
+        margin: 0;
+        padding: 2rem 0 4rem;
+    }
+
+    .menulist button {
+        width: 10rem;
+        font-size: 1rem;
+    }
+
+    #whatsnew {
+        margin-top: 4rem;
+    }
+
+    #whatsnew header {
+        width: 90%;
+        margin: 0 auto;
+        text-align: justify;
+    }
+
+    #whatsnew header p {
+        padding-top: 0;
+        margin-left: 3%;
+        margin-top: 1.9%;
+    }
+
+    .whatsnewfloat header h2, .whatsnewfloat header p {
+        float: left;
+    }
+
+    .snsicon {
+        float: right;
+        width: 12.5%;
+        margin: 0;
+        margin-right: 5%;
+        margin-top: 0.25%;
+    }
+
+    .snsicon li a img {
+        width: 2.25rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .comment {
+        font-size: 0.7rem;
+    }
+
+    .instafeed {
+        padding: 2rem 0 4rem;
+    }
+    .instafeed ul {
+        width: 100%;
+        margin: 0 0 0 5%;
+
+    }
+
+    #aboutbas {
+        text-align: justify;
+        padding-bottom: 4rem;
+        background: linear-gradient(0, #fcf8ef 57%, #fff 57.01%);
+    }
+
+    #aboutbas header {
+        width: 90%;
+        margin: 4rem auto 0;
+    }
+
+    #aboutbas article {
+        float: right;
+        width: 50%;
+        margin: 6rem 0;
+    }
+
+    #aboutbas article:first-of-type {
+        padding-left: 5%;
+        box-sizing: border-box;
+    }
+
+    #aboutbas article:last-of-type {
+        float: left;
+        text-align: right;
+        width: 45%;
+        margin-right: 5%;
+    }
+
+    #aboutbas h3 {
+        margin-top: 0;
+    }
+
+    #aboutbas p {
+        margin: 7% 0;
+        line-height: 2.3;
+    }
+
+    #aboutbas button {
+        width: 10rem;
+        font-size: 1rem;
+    }
+
+
+    .basbnr {
+        width: 40%;
+        margin: 6rem auto 0;
+    }
+
+    .btn1 {
+        display: none;
+    }
+
+    .btn2 {
+        display: inline-block;
+    }
+
+
+    #locations header {
+        padding: 0;
+        height: 10rem;
+    }
+
+    #locations header h2 {
+        float: left;
+        margin-left: 5%;
+        color: #c96;
+        line-height: 10rem;
+    }
+
+    #locations header h3 {
+        float: left;
+        margin-top: 0.25%;
+        margin-left: 3%;
+        line-height: 10rem;
+        color: #654;
+    }
+
+    .locationcts {
+        width: 100%;
+        height: 100%;
+        padding: 0 5%;
+        padding-top: 2rem;
+    }
+
+    .locationcts>div {
+        float: left;
+        width: 48%;
+        margin-right: 4%;
+    }
+
+    .locationcts>div:last-of-type {
+        margin-right: 0;
+    }
+
+    .locationbtn {
+        width: 20rem;
+    }
+
+    .locationlft {
+        width: 100%;
+        margin: 1rem 0 3rem;
+        padding: 0;
+    }
+
+    .locationlft h3 {
+        margin-bottom: 0;
+        color: #c96
+    }
+
+    .locationlft p {
+        display: block;
+        margin-top: 1rem;
+        width: 100%;
+        background: #fff;
+        padding: 1rem 0;
+        height: 100%
+    }
+
+    .locationlft .menutitle {
+        text-indent: 1rem;
+        margin-top: 0.5rem;
+    }
+
+    .locationlft .menucts {
+        text-indent: 1.5rem;
+        margin-top: 0;
+    }
+
+    .locationrit {
+        width: 100%;
+        margin: 0;
+        padding: 4.1rem 0 0;
+        overflow: hidden;
+    }
+
+    .locationrit img {
+        width: 100%;
+        margin: 0;
+        height: 18rem;
+        object-fit: cover;
+        margin-top: 0.5rem;
+    }
+
+    .locationlist {
+        margin: 2rem 0;
+    }
+
+    .ban1 {
+        display: block;
+    }
+
+    .ban2 {
+        display: none;
+    }
+
+
+
+
+    .barbnr {
+        width: 100%;
+        overflow: hidden;
+        height: 20rem;
+        background-size: cover;
+        background-position: 33% top;
+        background-attachment: fixed;
+    }
+
+    .barbnr img {
+        display: none;
+    }
+
+    .barbnr1 {
+        background-image: url(../image/barbanner1.jpg);
+    }
+
+    .barbnr2 {
+        background-image: url(../image/barbanner2.jpg);
+    }
+
+    #bottom {
+        padding: 4rem 5% 0;
+        text-align: justify;
+        box-sizing: border-box;
+    }
+
+    #bottom header h3 {
+        margin-top: 2.5%;
+        margin-bottom: 0;
+    }
+
+    #bottom aside {
+        float: left;
+        width: 31.33%;
+        margin-right: 3%;
+        padding: 5% 3%;
+        box-sizing: border-box;
+    }
+
+    #bottom aside:last-of-type {
+        margin-right: 0;
+    }
+
+    .sns {
+        text-align: center;
+    }
+
+    .sns li {
+        clear: both;
+        width: 100%;
+    }
+
+    .sns li:last-of-type {
+        margin-top: 5%;
+    }
+
+    .sns li button {
+        margin-top: 10%;
+        width: 10rem;
+        font-size: 1rem;
+    }
+
+
+    footer {
+        padding-top: 15%;
+    }
+
+    footer div {
+        width: 30%;
+        margin: 0 0 0 5%;
+    }
+
+    footer p {
+        float: right;
+        width: 30%;
+        margin: -5% 5% 0 0;
+    }
+
+    address {
+        margin: 3% auto 0 auto;
+    }
+
+    .prev {
+        left: 2.5%;
+    }
+
+    .next {
+        right: 2.5%;
+    }
+
+    button.slick-prev {
+        left: 2.5%;
+    }
+
+    button.slick-next {
+        right: 2.5%;
+    }
+
+    .instafeed button.slick-next {
+        right: 10%;
+    }
+
+
+}
+
+
+
+@media screen and (min-width:1060px) {
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .mainbnr {
+        float: right;
+        width: 50%;
+        margin: 0;
+        padding-top: 0;
+    }
+
+    .mainbnr img {
+        border: 0;
+    }
+
+    .m {
+        display: none;
+    }
+
+    .p {
+        display: block;
+    }
+
+    .subtitle {
+        font-size: 1.1rem;
+    }
+
+    .menutitle {
+        font-size: 1.2rem;
+    }
+
+    .menucts {
+        font-size: 1rem;
+    }
+
+    .menulist {
+        margin: 0;
+        padding: 2rem 0 4rem;
+    }
+
+    .menulist .menutitle {
+        margin-top: 0.5rem;
+    }
+
+    .instafeed ul {
+        margin-left:2.5%;
+    }
+    .instafeed button.slick-next {
+        right:9%;
+    }
+
+    .locationrit img {
+        height: 18.5rem;
+    }
+
+    #aboutbas {
+        background: linear-gradient(0, #fcf8ef 55%, #fff 55.01%);
+    }
+
+    #aboutbas p {
+        line-height: 2.7;
+    }
+
+
+
+}
+
+@media screen and (min-width:1280px) {
+    .title {
+        font-size: 3rem;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+    }
+
+    .menutitle {
+        font-size: 1.25rem;
+    }
+
+    .menucts {
+        font-size: 1.1rem;
+    }
+
+    .comment {
+        font-size: 1rem;
+    }
+
+    .locationrit img {
+        height: 19.5rem;
+    }
+
+    .locationpic {
+        margin: 2rem auto 4rem;
+    }
+
+
+    #aboutbas p {
+        line-height: 3;
+        margin-top: 3.5rem;
+    }
+
+    .prev {
+        width: 4rem;
+        height: 4rem;
+        left: 2.5%;
+    }
+
+    .prev:before {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .next {
+        width: 4rem;
+        height: 4rem;
+        right: 2.5%;
+    }
+
+    .next:before {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    button.slick-prev {
+        width: 4rem!important;
+        height: 4rem!important;
+        left: -2.5%;
+    }
+
+    button.slick-prev:before {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    button.slick-next {
+        width: 4rem!important;
+        height: 4rem!important;
+        right: -2.5%;
+    }
+
+    button.slick-next:before {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .instafeed ul {
+        width:120%;
+        margin-left:5%;
+    }
+    .instafeed ul li {
+        margin:0;
+    }
+
+    .instafeed button.slick-prev {
+        left: -2%;
+    }
+    .instafeed button.slick-next {
+        right:23%;
+    }
+
+}
+
+@media screen and (min-width:1440px) {
+
+    /* html {font-size:1.2rem;} */
+    .title {
+        font-size: 3.2rem;
+    }
+
+    .title2 {
+        font-size: 2.5rem;
+    }
+
+    .subtitle {
+        font-size: 1.3rem;
+    }
+
+    .comment {
+        font-size: 0.9rem;
+    }
+
+    .prev {
+        left: -3%;
+    }
+
+    .next {
+        right: -3%;
+    }
+
+    button.slick-prev {
+        left: -3%;
+    }
+
+    button.slick-next {
+        right: -3%;
+    }
+
+
+    #mainmenudiv {
+        width: 100%;
+        border-bottom: 1px solid #c96;
+    }
+
+    #mainmenu {
+        width: 1280px;
+        margin: 0 auto;
+        border: none;
+    }
+
+    #maindiv {
+        width: 100%;
+        background: #fcf8ef
+    }
+
+    #main {
+        width: 1280px;
+        margin: 0 auto;
+    }
+
+    #menu {
+        width: 100%;
+    }
+
+    .menufloat {
+        width: 1280px;
+        margin: 5% auto 2.5%;
+    }
+
+    .leftbox article {
+        height: auto;
+    }
+
+    .rightbox article {
+        height: auto;
+    }
+
+    #menulistdiv {
+        width: 100%;
+        background: #fcf8ef;
+    }
+
+    .menulist {
+        width: 1280px;
+        margin: 0 auto;
+    }
+
+    .menulist ul {
+        width: 100%;
+    }
+
+    #whatsnewdiv {
+        width: 100%;
+        background: linear-gradient(0, #fcf8ef 50%, #fff 50.01%);
+        overflow: hidden;
+    }
+
+    #whatsnew {
+        width: 1280px;
+        margin: 5% auto 0;
+        overflow: visible;
+    }
+
+    #whatsnew header {
+        width: 100%;
+    }
+
+    #whatsnew header p {
+        margin-top: 2%;
+    }
+
+    .instafeed {
+        width: 1280px;
+        background: none;
+        overflow: visible;
+    }
+
+    .instafeed ul {
+        margin-left:0;
+    }
+
+    .instafeed ul li {
+        margin:0 0.1%;
+
+    }
+
+    .instafeed button.slick-next {
+        right:14%;
+    }
+
+
+    .snsicon {
+        margin-right: 0;
+        margin-top: 1.25rem;
+    }
+
+    .menulist button {
+        width: 12rem;
+        font-size: 1.2rem;
+    }
+
+
+    #aboutbasdiv {
+        width: 100%;
+        background: linear-gradient(0, #fcf8ef 57%, #fff 57.01%);
+        padding-bottom: 4rem;
+    }
+
+    #aboutbas {
+        width: 1280px;
+        margin: 0 auto;
+        background: none;
+    }
+
+    #aboutbas header {
+        width: 100%;
+        margin: 4rem auto 0;
+    }
+
+    #aboutbas article {
+        float: right;
+        width: 50%;
+        margin: 10rem 0 6rem;
+    }
+
+    #aboutbas article:first-of-type {
+        margin: 10rem 0 0 5%;
+        width: 47.5%;
+        padding: 0;
+    }
+
+    #aboutbas article:last-of-type {
+        float: left;
+        text-align: right;
+        margin-right: 5%;
+        width: 47.5%;
+    }
+
+    .basbnr {
+        width: 47.5%;
+        margin: 10rem auto 0;
+    }
+
+    #aboutbas h3 {
+        margin-top: 0;
+    }
+
+    #aboutbas p {
+        margin: 4.5rem 0;
+    }
+
+    #locationsheaderdiv {
+        width: 100%;
+        border-top: 1px solid #c96;
+        border-bottom: 1px solid #c96;
+    }
+
+    #locations header {
+        width: 1280px;
+        margin: 0 auto;
+        border-top: none;
+        border-bottom: none;
+        background: none;
+    }
+
+    #locations header h2 {
+        margin: 0;
+    }
+
+    #locationctsdiv {
+        width: 100%;
+        background: #fcf8ef;
+    }
+
+    .locationcts {
+        width: 1280px;
+        margin: 0 auto;
+        padding: 2rem 0 1rem;
+        background: none;
+        height: auto;
+    }
+
+    .locationrit img {
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+
+
+    .locationpic {
+        width: 1280px;
+        margin: 2rem auto 4rem;
+    }
+
+    #bottomdiv {
+        width: 100%;
+        background: linear-gradient(0, #fcf8ef 25%, #f2f2f2 25.01%);
+    }
+
+    #bottom {
+        width: 1280px;
+        background: none;
+        margin: 0 auto;
+        padding: 5% 0 5%;
+    }
+
+    #footerdiv {
+        width: 100%;
+        background: #fcf8ef;
+    }
+
+    footer {
+        width: 1280px;
+        margin: 0 auto;
+        padding-top: 5%;
+    }
+
+    #bottom header h2, #bottom header h3 {
+        float: left;
+    }
+
+    #bottom header h2 {
+        margin:0;
+    }
+
+    #bottom header h3 {
+        display: inline-block;
+        margin: 1.25% 0 0 3%;
+    }
+
+    #bottom header h3 span {
+        display: inline-block;
+    }
+
+    footer div {
+        margin: 0;
+    }
+
+    footer p {
+        margin: -4.5% 0 0 0;
+    }
+
+    address {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:1600px) {
+
+    .instafeed ul li {
+        margin:0 0.2%;
+    }
+
+    .prev {
+        left: -10%;
+    }
+
+    .next {
+        right: -10%;
+    }
+
+    button.slick-prev {
+        left: -10%;
+    }
+
+    button.slick-next {
+        right: -10%;
+    }
+
+    .instaslick button.slick-prev {
+        left: -8%;
+    }
+
+    .instaslick button.slick-next {
+        right: 9%;
+    }
+
+}
+
+@media screen and (min-width:1920px) {
+
+    .instafeed ul {
+        margin-left:0;
+    }
+
+    .instaslick button.slick-prev {
+        left: -8%;
+    }
+
+    .instaslick button.slick-next {
+        right: 5%;
+        
+    }
+
+
+
+}
+
+@keyframes Scale {
+    0% {
+
+        transform: scale(0);
+    }
+
+    100% {
+
+        transform: scale(1);
+    }
+
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.delay-05s {
+    animation-delay: 0.5s;
+}
+
+.delay-1s {
+    animation-delay: 1s;
+}
+
+.delay-15s {
+    animation-delay: 1.5s;
+}
+
+.animated {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+    animation-duration: 0.5s;
+}
+
+.fadeInLeft {
+    animation-name: fadeInLeft;
+    animation-duration: 0.5s;
+}
+
+.fadeInRight {
+    animation-name: fadeInRight;
+    animation-duration: 0.5s;
+}
+
+.Scale {
+    animation-name: Scale;
+    animation-duration: 0.5s;
+}

@@ -1,0 +1,178 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Open+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+body {
+    width: 100%;
+    max-width: 600px;
+    min-width: 420px;
+    margin: 0 auto;
+    font: 1rem "Gowun batang", "Open Sans", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    position: relative;
+    margin: 1rem;
+}
+
+header img {
+    width: 2rem;
+}
+
+header h1 {
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%) scale(1.5);
+}
+
+nav ul li {
+    float: left;
+    margin-top: 1rem;
+}
+
+.topmenu {
+    float: right;
+    margin-top: 0.1rem;
+}
+
+.topmenu li {
+    margin-left: 1rem;
+}
+
+h2 {
+    font: bold 2rem "Open Sans";
+    text-align: center;
+    margin: 3rem 0;
+}
+
+h2 span {
+    display: block;
+    font-size: 1.5rem;
+}
+
+form {
+    width: 90%;
+    margin: 0 auto;
+}
+
+fieldset {
+    margin: 1rem 0;
+}
+
+legend {
+    font: bold 1.2rem "Gowun Batang", sans-serif;
+    margin-bottom: 1rem;
+}
+
+fieldset ul {
+    width: 95%;
+    margin: 0 auto;
+}
+
+fieldset ul li {
+    height: 3rem;
+    line-height: 3rem;
+}
+
+label {
+    display: inline-block;
+    width: 25%;
+}
+
+input {
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 1px solid #999;
+    box-sizing: border-box;
+}
+
+fieldset:first-child input {
+    width: 50%;
+}
+
+.check {
+    display: inline-block;
+    width: 20%;
+    text-align: right;
+    font-size: 0.8rem;
+    ;
+}
+
+.check img {
+    width: 1rem;
+    height: 1rem;
+    transform: translateY(100%);
+    margin-right: 0.5rem;
+}
+
+input[type="radio"] {
+    margin-right: 1rem;
+}
+
+.gd {
+    margin-left: 4rem;
+}
+
+select {
+    width: 20%;
+    border: 0;
+    font: 1rem "Gowun batang";
+    margin-right: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #999;
+}
+
+input[type="date"] {
+    width: 25%;
+    border: 0;
+    border-bottom: 1px solid #999;
+    box-sizing: border-box;
+    font: 0.8rem "Gowun batang";
+    text-align: right;
+}
+
+
+.button {
+    height: 5rem;
+    margin: 0 auto;
+}
+
+.button li {
+    float: left;
+    height: 100%;
+    line-height: 5rem;
+    width: 50%;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    transform: translateY(50%);
+    border: 0;
+    background: 0;
+    font: 1.2rem "Gowun batang";
+}
+
+button img {
+    width: 1.2rem;
+    height: 1.2rem;
+    transform: translateY(25%);
+    margin-right: 0.5rem;
+}
+
+aside {
+    width: 90%;
+    margin: 0 auto;
+}
+
+aside a img {
+    width: 100%;
+    border-radius: 25px;
+}

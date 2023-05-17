@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MorningGlory Mobile Page</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="shortcut icon" href="image/favicon.ico">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/mobile_oes.js"></script>
+
+</head>
+
+<body>
+
+    <header id="header">
+        <div class="cf">
+            <h1>
+                <button class="logo" onclick="location.href='./mobile_oes.html'">
+                    <img src="image/morningglory_icon.png" alt="logo">
+                </button>
+            </h1>
+
+            <button class="hamburger"><img src="image/menu.png" alt="menu"></button>
+            <div class="topicon cf">
+                <button class="mypagebtn" onclick="location.href='./mobile_oes_log_in.html'">
+                    <img src="image/mypage.png" alt="mypage">
+                </button>
+                <button onclick="location.href='./mobile_oes_search.html'">
+                    <img src="image/search.png" alt="search">
+                </button>
+            </div>
+        </div>
+        <div class="mainmenudiv">
+            <ul class="mainmenu cf">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#todaysbest">Best</a></li>
+                <li><a href="#event">Event</a></li>
+                <li><a href="#new">New</a></li>
+            </ul>
+        </div>
+        <!--mainmenudiv-->
+        <div class="floatbtn">
+            <div>
+                <a href="#" class="floathambtn"><img src="image/menu.png" alt="전체메뉴 보기"></a>
+            </div>
+            <div>
+                <a href="#header" class="floathome"><img src="image/morningglory_icon.png" alt="홈으로"></a>
+            </div>
+            <div>
+                <a href="./mobile_oes_log_in.html" class="floatmymenu"><img src="image/mypage.png" alt="마이페이지 가기"></a>
+            </div>
+        </div>
+        <p class="line"></p>
+    </header>
+
+    <nav>
+        <div class="menu">
+            <button class="cross"><img src="image/x.png" alt="X"></button>
+
+            <ul class="mainmenu cf">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#todaysbest">Best</a></li>
+                <li><a href="#event">Event</a></li>
+                <li><a href="#new">New</a></li>
+            </ul>
+            <div class="category cf">
+                <h3><a href="./category.html">Category</a></h3>
+                <ul class="sub">
+                    <li><a href="./category.html#notects">노트</a></li>
+                    <li><a href="./category.html#hobbycts">취미/완구</a></li>
+                    <li><a href="./category.html#travelcts">여행/레포츠</a></li>
+                </ul>
+                <ul class="sub">
+                    <li><a href="./category.html#designcts">디자인문구</a></li>
+                    <li><a href="./category.html#fashioncts">패션/잡화</a></li>
+                    <li><a href="./category.html#householdcts">생활용품</a></li>
+                </ul>
+            </div>
+            <!--category-->
+
+            <div class="brand cf">
+                <h3><a href="#">Brand</a></h3>
+                <ul class="sub2 cf">
+                    <li><a href="#">MD's Pick</a></li>
+                    <li><a href="#">About us</a></li>
+                </ul>
+            </div>
+
+            <div class="mypage cf">
+                <h3><a href="#">My Page</a></h3>
+                <ul class="sub2 cf">
+                    <li><a href="#">내 마음</a></li>
+                    <li><a href="#">내 정보</a></li>
+                </ul>
+            </div>
+
+            <div class="cs">
+                <h3><a href="#">Customer Service Center</a></h3>
+
+                <ul class="sub2 cf">
+                    <li>
+                        <p>
+                            <span>&phone; 02.2179.0380 </span>
+                            <span>Mon-Fri AM 10:00 - PM 5:00</span>
+                            <span> Lunch PM 12:00 PM 1:00 </span>
+                            <span>Sat.Sun.Holiday Off</span>
+                        </p>
+                    </li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--menu 종료-->
+
+    <section class="main">
+        <h2 class="skip">진행중인 이벤트</h2>
+        <article class="mainbnr">
+            <h2>
+                <a href="#">
+                    <img src="image/mainbnr1.jpg" alt="수능, 철벽대비 2022학년도 수학능력시험 D-100 수능대비 상품전">
+                </a>
+            </h2>
+            <div class="centerline"></div>
+            <div class="mainevt cf">
+                <article>
+                    <h3>
+                        <a href="#">
+                            <img src="image/main1.jpg" alt="스터디플레너 이미지">
+                            <span class="subtitle">1500 달이면달마다</span>
+                            <span class="title">스터디 플레너</span>
+                            <span class="price">1,500원</span>
+                        </a>
+                        <button class="heart"><img src="image/heartmty.png" alt="좋아요"></button>
+                    </h3>
+                </article>
+                <article>
+                    <h3>
+                        <a href="#">
+                            <img src="image/main2.jpg" alt="플레너3 이미지">
+                            <span class="subtitle">6000</span>
+                            <span class="title">D-100 플래너3</span>
+                            <span class="price">6,000원</span>
+                        </a>
+                        <button class="heart"><img src="image/heartmty.png" alt="좋아요"></button>
+                    </h3>
+                </article>
+                <article>
+                    <h3>
+                        <a href="#">
+                            <img src="image/main3.jpg" alt="컴퓨터용 싸인펜">
+                            <span class="subtitle">백점만점</span>
+                            <span class="title">컴퓨터용 싸인펜</span>
+
+                            <span class="price"><em>50% </em>600원</span>
+                        </a>
+                    </h3>
+                    <button class="heart"><img src="image/heartmty.png" alt="좋아요"></button>
+                </article>
+                <article>
+                    <h3>
+                        <a href="#">
+                            <img src="image/main4.jpg" alt="비움 와이드 스톱워치">
+                            <span class="subtitle">비움</span>
+                            <span class="title">와이드 스톱워치</span>
+
+                            <span class="price"><em>50% </em>10,000원</span>
+                        </a>
+                        <button class="heart"><img src="image/heartmty.png" alt="좋아요"></button>
+                    </h3>
+                </article>
+            </div>
+        </article>
+
+        <article class="mainbnr">
+            <h2 class="header">
+                <span>MD's Pick</span>
+                <span class="subtitle">추천상품</span>
+            </h2>
+
+
+            <a href="#">
+                <img src="image/mainbnr2.jpg" alt="모닝글로리 미니멀 문고라인업 비움 시리즈">
+            </a>
+            <div class="centerline"></div>
+            <div class="mainevt cf">
+                <article>
+                    <h3>
+                        <a href="#">
+                            <img src="image/bium1.jpg" alt="비움 제도샤프 0.5mm">
+                            <span class="subtitle">1000</span>
+                            <span class="title">비움 제도샤프 0.5mm</span>
+                            <span class="price">1,000원</span>
+                        </a>
+                        <button class="heart"><img src="image/heartmty.png" alt="좋아요"></button>
+                    </h3>
+                </article>
+                <article>
+                    <h3>
+                        <a href="#">
+                            <img src="image/bium2.jpg" alt="비움 펜 수정테이프">
+                            <span class="subtitle">1500</span>
+                            <span class="title">비움 펜 수정테이프</span>
+                            <span class="price">1,500원</span>
+                        </a>
+                        <button class="heart"><img src="image/heartmty.png" alt="좋아요"></button>
+                    </h3>
+                </article>
+                <article>
+                    <h3>
+                        <a href="#">
+                            <img src="image/bium3.jpg" alt="비움 양장노트">
+                            <span class="subtitle">6000</span>
+                            <span class="title">비움 양장노트(S)</span>
+
+                            <span class="price">6,000원</span>
+                        </a>
+                        <button class="heart"><img src="image/heartmty.png" alt="좋아요"></button>
+                    </h3>
+                </article>
+                <article>
+                    <h3>
+                        <a href="#">
+                            <img src="image/bium4.jpg" alt="비움 지우개">
+                            <span class="subtitle">400</span>
+                            <span class="title">비움 지우개</span>
+
+                            <span class="price">400원</span>
+                        </a>
+                        <button class="heart"><img src="image/heartmty.png" alt="좋아요"></button>
+                    </h3>
+                </article>
+
+                <article>
+                    <h3>
+                        <a href="#">
+                            <img src="image/bium5.jpg" alt="비움 반투명 인덱스 점착메모지">
+                            <span class="subtitle">1500</span>
+                            <span class="title">비움 인덱스 메모지</span>
+
+                            <span class="price">1,500원</span>
+                        </a>
+                        <button class="heart"><img src="image/heartmty.png" alt="좋아요"></button>
+                    </h3>
+                </article>
+
+                <article>
+                    <h3>
+                        <a href="#">
+                            <img src="image/bium6.jpg" alt="비움 지우개">
+                            <span class="subtitle">400</span>
+                            <span class="title">비움 지우개</span>
+
+                            <span class="price">400원</span>
+                        </a>
+                        <button class="heart"><img src="image/heartmty.png" alt="좋아요"></button>
+                    </h3>
+                </article>
+            </div>
+        </article>
+    </section>
+    <!--main -->
+
+
+    <section id="todaysbest">
+        <header class="cf">
+            <p class="leftstar">★</p>
+            <p class="rightstar">★</p>
+            <h2>오늘의 <span>Best</span></h2>
+
+        </header>
+
+        <div>
+            <h2>실시간 Best</h2>
+            <div class="bestcts cf">
+                <article>
+                    <h3>
+                        <a href="#">
+                            <img src="image/nowbest1.jpg" alt="스낵중철노트">
+                            <span class="subtitle">모닝글로리X농심 콜라보</span>
+                            <span class="title">스낵 중철노트</span>
+                            <span class="price">800원</span>
+                        </a>
+                        <button class="heart"><img src="image/heartmty.png" alt="좋아요"></button>
+                    </h3>
+                </article>
+
+                <article>
+                    <h3>
+                        <a href="#">
+                            <img src="image/nowbest2.jpg" alt="캠퍼스메이트 저점도펜">
+                            <span class="subtitle">캠퍼스메이트</span>
+                            <span class="title">저점도펜 0.07mm</span>
+                            <span class="price">1,500원</span>
+                        </a>
+                        <button class="heart"><img src="image/heartmty.png" alt="좋아요"></button>
+                    </h3>
+                </article>
+
+
+
+                <article>
+                    <h3>
+                        <a href="#">
+                            <img src="image/toybest1.jpg" alt="수능합격 손목시계">
+                            <span class="subtitle">16000</span>
+                            <span class="title">수능합격 손목시계</span>
+                            <span class="price">16,000원</span>
+                        </a>
+                        <button class="heart"><img src="image/heartmty.png" alt="좋아요"></button>
+                    </h3>
+                </article>
+
+                <article>
+                    <h3>
+                        <a href="#">
+                            <img src="image/designbest1.jpg" alt="비움 양장플래너">
+                            <span class="subtitle">비움시리즈</span>
+                            <span class="title">양장플래너 25A</span>
+                            <span class="price">15,000원</span>
+                        </a>
+                        <button class="heart"><img src="image/heartmty.png" alt="좋아요"></button>
+                    </h3>
+                </article>
+
+                <article>
+                    <h3>
+                        <a href="#">
+                            <img src="image/designbest2.jpg" alt="토끼 샤프 눈치코치">
+                            <span class="subtitle">0.5mm</span>
+                            <span class="title">토끼 샤프 눈치코치</span>
+                            <span class="price">1,500원</span>
+                        </a>
+                        <button class="heart"><img src="image/heartmty.png" alt="좋아요"></button>
+                    </h3>
+                </article>
+
+            </div>
+
+        </div>
+
+        <div>
+            <h2>디자인문구 Best</h2>
+            <div class="delay-2s bestcts cf">
+                <article>
+                    <h3>
+                        <a href="#">
+                            <img src="image/designbest1.jpg" alt="양장플레너25A">
+                            <span class="subtitle">비움시리즈</span>
+                            <span class="title">양장플래너 25A</span>
+                            <span class="price">15,000원</span>
+                        </a>
+                        <button class="heart"><img src="image/heartmty.png" alt="좋아요"></button>
+                    </h3>
+                </article>
+
+                <article>
+                    <h3>
+                        <a href="#">
+                            <img src="image/designbest2.jpg" alt="토끼 샤프 눈치코치">
+                            <span class="subtitle">0.5mm</span>
+                            <span class="title">토끼 샤프 눈치코치</span>
+                            <span class="price">1,500원</span>
+                        </a>
+                        <button class="heart"><img src="image/heartmty.png" alt="좋아요"></button>
+                    </h3>
+                </article>
+
+                <article>
+                    <h3>
+                        <a href="#">
+                            <img src="image/design1.jpg" alt="ZIPIT 집잇 대용량 카본박스필통">
+                            <span class="subtitle">ZIPIT 집잇</span>
+                            <span class="title">카본박스 필통</span>
+                            <span class="price">28,000원</span>
+                        </a>
+                        <button class="heart"><img src="image/heartmty.png" alt="좋아요"></button>
+                    </h3>
+                </article>
+                <article>
+                    <h3>
+                        <a href="#">
+                            <img src="image/note1.jpg" alt="감성 스케줄러">
+                            <span class="subtitle">감성 스케줄러</span>
+                            <span class="title">일년의 이야기</span>
+                            <span class="price">5,000원</span>
+                        </a>
+                        <button class="heart"><img src="image/heartmty.png" alt="좋아요"></button>
+                    </h3>
+                </article>
+
+                <article>
+                    <h3>
+                        <a href="#">
+                            <img src="image/design5.jpg" alt="ZIPIT 집잇 점보파우치/클러치">
+                            <span class="subtitle">ZIPIT 집잇</span>
+                            <span class="title">점보파우치/클러치</span>
+                            <span class="price">24,000원</span>
+                        </a>
+                        <button class="heart"><img src="image/heartmty.png" alt="좋아요"></button>
+                    </h3>
+                </article>
+            </div>
+
+        </div>
+
+        <div>
+            <h2>취미/완구 Best</h2>
+            <div class="delay-4s bestcts cf">
+                <article>
+                    <h3>
+                        <a href="#">
+                            <img src="image/toybest1.jpg" alt="수능 합격 손목시계 L">
+                            <span class="subtitle">16000</span>
+                            <span class="title">수능 합격 손목시계</span>
+                            <span class="price">16,000원</span>
+                        </a>
+                        <button class="heart"><img src="image/heartmty.png" alt="좋아요"></button>
+                    </h3>
+                </article>
+
+                <article>
+                    <h3>
+                        <a href="#">
+                            <img src="image/toybest2.jpg" alt="큐트 핸디선풍기">
+                            <span class="subtitle">모닝글로리X농심콜라보</span>
+                            <span class="title">큐트 핸디선풍기</span>
+                            <span class="price">16,000원</span>
+                        </a>
+                        <button class="heart"><img src="image/heartmty.png" alt="좋아요"></button>
+                    </h3>
+                </article>
+
+                <article>
+                    <h3>
+                        <a href="#">
+                            <img src="image/hobby5.jpg" alt="뉴펜톡 3D펜 세트">
+                            <span class="subtitle">3D펜</span>
+                            <span class="title">뉴펜톡 3D세트</span>
+                            <span class="price">89,000원</span>
+                        </a>
+                        <button class="heart"><img src="image/heartmty.png" alt="좋아요"></button>
+                    </h3>
+                </article>
+
+                <article>
+                    <h3>
+                        <a href="#">
+                            <img src="image/hobby1.jpg" alt="두근두근 초코스낵게임">
+                            <span class="subtitle">보드게임</span>
+                            <span class="title">초코스낵게임</span>
+                            <span class="price">5,000원</span>
+                        </a>
+                        <button class="heart"><img src="image/heartmty.png" alt="좋아요"></button>
+                    </h3>
+                </article>
+
+                <article>
+                    <h3>
+                        <a href="#">
+                            <img src="image/event2.jpg" alt="비움 와이드 스톱워치">
+                            <span class="subtitle">비움시리즈</span>
+                            <span class="title">와이드 스톱워치</span>
+                            <span class="price">10,000원</span>
+                        </a>
+                        <button class="heart"><img src="image/heartmty.png" alt="좋아요"></button>
+                    </h3>
+                </article>
+            </div>
+
+        </div>
+
+
+    </section>
+    <!--todays best-->
+
+    <section id="event">
+        <header>
+            <h2>당신을 위한 Event</h2>
+        </header>
+
+        <div>
+            <a href="#">
+                <img src="image/mainbnr1.jpg" alt="수능, 철벽대비 2022학년도 수학능력시험 D-100 수능 대비 상품전">
+            </a>
+        </div>
+
+        <article class="cf">
+
+            <div>
+                <h3>
+                    <a href="#">
+                        <img src="image/event1.jpg" alt="컴퓨터용 싸인펜">
+                    </a>
+                </h3>
+            </div>
+
+            <div>
+                <a href="#">
+                    <span class="subtitle">"스치기만 해도 정답."</span>
+                    <span class="title2">백점만점</span>
+                    <span class="title2">컴퓨터용 싸인펜</span>
+                    <span class="cancel">1,200원</span>
+
+                    <span class="price2">600원</span>
+                    <span class="percent">50%</span>
+                </a>
+                <button class="heart"><img src="image/heartmty.png" alt="좋아요"></button>
+            </div>
+
+
+
+        </article>
+
+        <article class="cf">
+
+            <div>
+                <h3>
+                    <a href="#">
+                        <img src="image/event2.jpg" alt="비움 와이드 스톱워치">
+                    </a>
+                </h3>
+            </div>
+
+            <div>
+                <a href="#">
+                    <span class="subtitle">"수능은 시간관리가 생명."</span>
+                    <span class="title2">비움</span>
+                    <span class="title2">와이드 스톱워치</span>
+                    <span class="cancel">20,000원</span>
+                    <span class="price2">10,000원</span>
+                    <span class="percent">50%</span>
+                </a>
+                <button class="heart"><img src="image/heartmty.png" alt="좋아요"></button>
+            </div>
+
+        </article>
+
+    </section>
+    <!--Event-->
+
+
+    <section id="new">
+        <header>
+            <h2><img src="image/newlft.jpg" alt="뉴베너"><span>What's New</span><img src="image/newrit.jpg" alt="뉴베너"></h2>
+            <h3>따끈따끈신상</h3>
+            <div class="line"></div>
+        </header>
+
+        <article class="cf">
+
+            <div class="nleft">
+                <h3>
+                    <a href="#">
+                        <img src="image/new1.jpg" alt="레터링 정보카드">
+                        <span class="title">레터링 정보카드</span>
+                        <span class="price">1,500원</span>
+                    </a>
+                    <button class="heart"><img src="image/heartmty.png" alt="좋아요"></button>
+                </h3>
+            </div>
+            <div class="nbnrtext">
+                <span>단</span>
+                <span class="nspace">어</span>
+                <span>암</span>
+                <span>기</span>
+                <span class="nspace">에</span>
+                <span>최</span>
+                <span>적</span>
+                <span class="nperiod">.</span>
+            </div>
+
+        </article>
+
+        <article class="cf">
+            <div class="nbnrtext">
+                <span>한국 정취가 가득.<br>집에서 떠나는 한국여행</span>
+            </div>
+            <div>
+                <h3>
+                    <a href="#">
+                        <img src="image/new2.jpg" alt="한국엽서세트">
+                        <span class="title">한국엽서 세트</span>
+                        <span class="price">5,000원</span>
+                    </a>
+                    <button class="heart"><img src="image/heartmty.png" alt="좋아요"></button>
+                </h3>
+            </div>
+        </article>
+
+        <article class="cf">
+            <div>
+                <h3>
+                    <a href="#">
+                        <img src="image/new3.jpg" alt="컬러테라피 엽서북">
+                        <span class="title">컬러테라피 엽서북</span>
+                        <span class="price">7,000원</span>
+                    </a>
+                    <button class="heart"><img src="image/heartmty.png" alt="좋아요"></button>
+                </h3>
+            </div>
+            <div class="nbnrtext">
+                <span>컬</span>
+                <span>러</span>
+                <span>링</span>
+                <span>으</span>
+                <span class="nspace">로</span>
+                <span>감</span>
+                <span class="nspace">성</span>
+                <span>충</span>
+                <span>전</span>
+                <span class="nperiod">.</span>
+            </div>
+        </article>
+        <div class="centerline"></div>
+    </section>
+    <!--What's New-->
+
+
+
+    <section id="bottom">
+
+        <div class="menu">
+
+            <ul class="mainmenu cf">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#todaysbest">Best</a></li>
+                <li><a href="#event">Event</a></li>
+                <li><a href="#new">New</a></li>
+            </ul>
+            <div class="category cf">
+                <h3><a href="./category.html#">Category</a></h3>
+                <ul class="sub">
+                    <li><a href="./category.html#notects">노트</a></li>
+                    <li><a href="./category.html#hobbycts">취미/완구</a></li>
+                    <li><a href="./category.html#travelcts">여행/레포츠</a></li>
+                </ul>
+                <ul class="sub">
+                    <li><a href="./category.html#designcts">디자인문구</a></li>
+                    <li><a href="./category.html#fashioncts">패션/잡화</a></li>
+                    <li><a href="./category.html#householdcts">생활용품</a></li>
+                </ul>
+            </div>
+            <!--category-->
+
+            <div class="brand cf">
+                <h3><a href="#">Brand</a></h3>
+                <ul class="sub2 cf">
+                    <li><a href="#">MD's Pick</a></li>
+                    <li><a href="#">About us</a></li>
+                </ul>
+            </div>
+
+            <div class="mypage cf">
+                <h3><a href="./mobile_oes_log_in.html">My Page</a></h3>
+                <ul class="sub2 cf">
+                    <li><a href="./mobile_oes_log_in.html">내 마음</a></li>
+                    <li><a href="./mobile_oes_log_in.html">내 정보</a></li>
+                </ul>
+            </div>
+
+
+
+            <div class="cs">
+                <h3><a href="#">Customer Service Center</a></h3>
+
+                <ul class="sub2 cf">
+                    <li>
+                        <p>
+                            <span>&phone; 02.2179.0380</span>
+                            <span>Mon-Fri AM 10:00 - PM 5:00</span>
+                            <span>Lunch PM 12:00 PM 1:00</span>
+                            <span>Sat.Sun.Holiday Off</span>
+                        </p>
+                    </li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+
+            <div id="footer">
+                <address>
+                    <span>Company (주)모닝글로리 / Owner 허상일</span>
+                    <span>Address 경기도 화성시 향남읍 장안로 781-55 모닝글로리</span>
+                    <span>02.2179.0380</span>
+                    <span>개인정보관리책임자: 허상일</span>
+                    <span>사업자등록번호: 105-81-00201</span>
+                    <span>통신판매업신고번호:2005-서울강서-0201</span>
+
+                </address>
+            </div>
+        </div>
+        <!--#menu-->
+    </section>
+    <!--menu 종료-->
+
+
+
+</body>
+
+</html>
